@@ -15,6 +15,7 @@ class GameNetworker: ObservableObject {
     init() {}
     
     let wrapper = IGDBWrapper(clientID: APIKeys().IGDBClientID, accessToken: APIKeys().IGDBAccessToken)
+    let proxyURL = IGDBWrapper(proxyURL: "https://rh6dea20bg.execute-api.us-west-2.amazonaws.com/production/v4/games")
    
     
     func fetchTopGames() {

@@ -38,6 +38,8 @@
 		FBAE3BF728B7C1FD00AB01EF /* CouchNerdTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE3BF628B7C1FD00AB01EF /* CouchNerdTests.swift */; };
 		FBAE3C0028B7F9C900AB01EF /* MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE3BFF28B7F9C900AB01EF /* MovieTests.swift */; };
 		FBAE3C0228B8FCE300AB01EF /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE3C0128B8FCE300AB01EF /* APIKeys.swift */; };
+		FBAE3C2628B9463700AB01EF /* IGDB-SWIFT-API in Frameworks */ = {isa = PBXBuildFile; productRef = FBAE3C2528B9463700AB01EF /* IGDB-SWIFT-API */; };
+		FBAE3C2828B9468000AB01EF /* IGDBSwiftExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAE3C2728B9468000AB01EF /* IGDBSwiftExtension.swift */; };
 		FBCA3E72288C7DD40012EF17 /* CouchNerdApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA3E71288C7DD40012EF17 /* CouchNerdApp.swift */; };
 		FBCA3E74288C7DD40012EF17 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA3E73288C7DD40012EF17 /* ContentView.swift */; };
 		FBCA3E76288C7DD60012EF17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCA3E75288C7DD60012EF17 /* Assets.xcassets */; };
@@ -63,7 +65,6 @@
 		FBCA3EBC28909B8B0012EF17 /* TVSearchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCA3EBB28909B8B0012EF17 /* TVSearchListView.swift */; };
 		FBCD04F2289C122B000A8FAA /* CDHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD04F1289C122B000A8FAA /* CDHelpers.swift */; };
 		FBCD04F8289D9ACD000A8FAA /* BindingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCD04F7289D9ACD000A8FAA /* BindingHelper.swift */; };
-		FBCD050828A306D2000A8FAA /* IGDB-SWIFT-API in Frameworks */ = {isa = PBXBuildFile; productRef = FBCD050728A306D2000A8FAA /* IGDB-SWIFT-API */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,8 @@
 		FBAE3BF628B7C1FD00AB01EF /* CouchNerdTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchNerdTests.swift; sourceTree = "<group>"; };
 		FBAE3BFF28B7F9C900AB01EF /* MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieTests.swift; sourceTree = "<group>"; };
 		FBAE3C0128B8FCE300AB01EF /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		FBAE3C2728B9468000AB01EF /* IGDBSwiftExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGDBSwiftExtension.swift; sourceTree = "<group>"; };
+		FBAE3C2B28B9478800AB01EF /* IGDB-SWIFT-API */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = "IGDB-SWIFT-API"; sourceTree = "<group>"; };
 		FBCA3E6E288C7DD40012EF17 /* CouchNerd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CouchNerd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBCA3E71288C7DD40012EF17 /* CouchNerdApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CouchNerdApp.swift; sourceTree = "<group>"; };
 		FBCA3E73288C7DD40012EF17 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -149,7 +152,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBCD050828A306D2000A8FAA /* IGDB-SWIFT-API in Frameworks */,
+				FBAE3C2628B9463700AB01EF /* IGDB-SWIFT-API in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				FBCA3E70288C7DD40012EF17 /* CouchNerd */,
+				FBAE3C2B28B9478800AB01EF /* IGDB-SWIFT-API */,
 				FBAE3BF528B7C1FD00AB01EF /* CouchNerdTests */,
 				FBCA3E6F288C7DD40012EF17 /* Products */,
 			);
@@ -285,6 +289,7 @@
 			children = (
 				FBCA3EA5288DFD5B0012EF17 /* ColorHelper.swift */,
 				FBCD04F1289C122B000A8FAA /* CDHelpers.swift */,
+				FBAE3C2728B9468000AB01EF /* IGDBSwiftExtension.swift */,
 				FBCD04F7289D9ACD000A8FAA /* BindingHelper.swift */,
 				FBCA3EA8288E06E00012EF17 /* StringHelper.swift */,
 				FBAE3C0128B8FCE300AB01EF /* APIKeys.swift */,
@@ -367,7 +372,7 @@
 			);
 			name = CouchNerd;
 			packageProductDependencies = (
-				FBCD050728A306D2000A8FAA /* IGDB-SWIFT-API */,
+				FBAE3C2528B9463700AB01EF /* IGDB-SWIFT-API */,
 			);
 			productName = CouchNerd;
 			productReference = FBCA3E6E288C7DD40012EF17 /* CouchNerd.app */;
@@ -402,7 +407,7 @@
 			);
 			mainGroup = FBCA3E65288C7DD30012EF17;
 			packageReferences = (
-				FBCD050628A306D2000A8FAA /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */,
+				FBAE3C2428B9463700AB01EF /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */,
 			);
 			productRefGroup = FBCA3E6F288C7DD40012EF17 /* Products */;
 			projectDirPath = "";
@@ -454,6 +459,7 @@
 				FBCA3E87288C89690012EF17 /* MovieNetworker.swift in Sources */,
 				FBAC3E8A28AC3917000FBB49 /* SavedTVShowDetailView.swift in Sources */,
 				FBCA3E98288C9E8D0012EF17 /* Book.swift in Sources */,
+				FBAE3C2828B9468000AB01EF /* IGDBSwiftExtension.swift in Sources */,
 				FB8C10AC2892E2EF0031C44C /* SystemGroupBoxView.swift in Sources */,
 				FBAE3BE728B5432000AB01EF /* FavoriteTVShowsView.swift in Sources */,
 				FBAE3BEC28B54D4100AB01EF /* AboutView.swift in Sources */,
@@ -756,7 +762,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		FBCD050628A306D2000A8FAA /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */ = {
+		FBAE3C2428B9463700AB01EF /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/husnjak/IGDB-SWIFT-API.git";
 			requirement = {
@@ -767,9 +773,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		FBCD050728A306D2000A8FAA /* IGDB-SWIFT-API */ = {
+		FBAE3C2528B9463700AB01EF /* IGDB-SWIFT-API */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = FBCD050628A306D2000A8FAA /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */;
+			package = FBAE3C2428B9463700AB01EF /* XCRemoteSwiftPackageReference "IGDB-SWIFT-API" */;
 			productName = "IGDB-SWIFT-API";
 		};
 /* End XCSwiftPackageProductDependency section */
